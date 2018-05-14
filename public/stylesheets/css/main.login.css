@@ -8,43 +8,16 @@
     background-size: 100% 100% !important;
     background-position: center;
     height: 100vh;
-}
-
-/* .login-box {
-    width: 400px;
-    height: 500px;
-    background: rgba(0, 0, 0, 0.5);
-    top: 50%;
-    left: 50%;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    position: absolute;
-    box-sizing: border-box;
-    box-shadow: 0px 15px 40px rgba(0,0,0,.5);
-    -webkit-transition: all linear 0.5s;
-    transition: all linear 0.5s;
-} */
-
-.login-btn {
-    height: 40px;
-    width: 30%;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #000;
-    font-size: 15px;
-    cursor: pointer;
-    border-radius: 20px;
-}
-
-.login-box h1 {
-    color: #ffffff;
-    font-size: 55px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
-    text-shadow: 1px 2px 3px #000;
+    /* -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px); */
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: block;
 }
 
 @media screen and (max-width:450px) {
@@ -72,21 +45,24 @@
 }
 
 @media screen and (min-width:541px) and (max-width:768px) {
+    .login-wrapper {
+        background-size: 100% 100% !important;
+        height: 100vh;
+    }
     .login-box {
-        background: blue;
-        width: 400px;
-        height: 250px;
-        top: 45%;
-        opacity: 0.5;
+        width: 80%;
+        height: 150px;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        box-shadow: 0px 15px 40px rgba(0, 0, 0, .5);
+        background: #3498DB;
     }
-    .login-box h1 {
-        color: #ffffff;
-        font-size: 20px;
-        font-weight: bold;
-        text-align: center;
-        margin-top: 20px;
-        text-shadow: 1px 2px 3px #000;
-    }
+  
+   
+   
+   
 }
 
 @media screen and (min-width:769px) and (max-width:1024px) {
@@ -122,114 +98,94 @@
         height: 100vh;
     }
     .login-box {
-        width: 60%;
-        height: 400px;
-        border: 1px solid red;
+        width: 35%;
+        height: 500px;
         top: 50%;
         left: 50%;
+        background: rgba(0, 0, 0, 0.9);
         transform: translate(-50%, -50%);
         position: absolute;
         box-shadow: 0px 15px 40px rgba(0, 0, 0, .5);
         -webkit-transition: all linear 0.5s;
         transition: all linear 0.5s;
     }
-    .login-box .title {
-        text-align: center;
-        padding: 0 0 0 0;
-    }
-    .login-box .title h1 {
-        color: #ffffff;
-        font-size: 20px;
-        font-weight: bold;
-        text-align: center;
-        margin-top: 20px;
-        text-transform: uppercase;
-        text-shadow: 1px 2px 3px #000;
-    }
-    .login-box .left-content {
-        float: left;
-        width: 50%;
-        background-image: url(../../images/68488641-school-wallpapers.jpg);
-        background-repeat: no-repeat;
-        opacity: 1;
-        background-size: cover;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        height: 100%;
-        box-sizing: border-box;
-    }
-    .login-box .right-content {
-        float: right;
-        width: 50%;
-        height: 100%;
-        box-sizing: border-box;
-    }
-    .loginFromBox {
-        width: 100%;
-        box-sizing: border-box;
-        height: 400px;
-        padding: 80px 40px;
-        background: #000000;
-        opacity: 0.6;
-    }
-    .loginFromBox p {
+    .login-box p {
         margin: 0;
         padding: 0;
         font-weight: bold;
         color: #C0392B;
     }
-    .loginFromBox input{
-        margin-bottom: 30px;
-        
+    .login-box input {
+        margin: 60px 0px 30px 20px;
     }
-    .loginFromBox input[type="text"],
-    .loginFromBox input[type="password"]{
-        width: 100%;
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+        width: 90%;
         outline: none;
         border: none;
         background: transparent;
         border-bottom: 2px solid #C0392B;
-        color:#fff;
+        color: #fff;
     }
-
-
-    .loginFromBox button.login-button {
-        color:#fff;
-        font-size:15px!important;
-        background-color:rgba(255,204,0,0.8);
-        cursor:pointer;
+    .login-box button {
+        margin-bottom: 5px;
+    }
+    .login-box button.login-button {
+        color: #fff;
+        font-size: 15px !important;
+        background-color: rgba(255, 204, 0, 0.8);
+        cursor: pointer;
         height: 40px;
         width: 100%;
         border: none;
         cursor: pointer;
         border-radius: 20px;
     }
-    .loginFromBox button.login-button i{
-        font-size:25px!important; 
+    .login-box button.login-button i {
+        font-size: 25px !important;
     }
-    
-    .loginFromBox button.login-button:hover {
-        background-color:rgba(68, 0, 255, 0.8);
+    .login-box button.login-button:hover {
+        background-color: rgba(68, 0, 255, 0.8);
     }
-
-
-    .loginFromBox button.login-cancel-button {
-        color:#fff;
-        font-size:15px!important;
-        background-color:rgba(255,204,0,0.8);
-        cursor:pointer;
+    .login-box button.login-cancel-button {
+        color: #fff;
+        font-size: 15px !important;
+        background-color: rgba(255, 204, 0, 0.8);
+        cursor: pointer;
         height: 40px;
         width: 100%;
         border: none;
         cursor: pointer;
         border-radius: 20px;
     }
-    .loginFromBox button.login-cancel-button i{
-        font-size:25px!important; 
+    .login-box button.login-cancel-button i {
+        font-size: 25px !important;
     }
-    
-    .loginFromBox button.login-cancel-button:hover {
-        background-color:rgba(68, 0, 255, 0.8);
+    .login-box button.login-cancel-button:hover {
+        background-color: rgba(68, 0, 255, 0.8);
+    }
+    .login-box a {
+        font-size: 15px;
+        text-decoration: none;
+        color: #3498DB;
+        font-weight: bold;
+        margin-bottom: 20px !important;
+        padding: 20px 0 0 20px;
+    }
+    .login-box .rDIV {
+        width: 50%;
+        float: right;
+    }
+    .login-box .lDiv {
+        width: 50%;
+        float: left;
+    }
+    .login-box .rDIV_I {
+        width: 50%;
+        float: right;
+    }
+    .login-box .lDiv_I {
+        width: 50%;
+        float: left;
     }
 }

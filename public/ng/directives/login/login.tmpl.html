@@ -2,48 +2,34 @@
 
     <div class="login-wrapper">
         <div class="login-box">
-            <!-- <span class="title">
-                <h1>sign in here</h1>
-            </span> -->
+                <form role="form" name="loginFrom" ng-submit="login(username,password)">
 
-            <div class="left-content">
-                dasdas
-            </div>
-            <div class="right-content">
-                <div class="loginFromBox">
-                    <form role="form" name="loginFrom" ng-submit="login(username,password)">
+                   
+                    <input type="text" id="lUserName" placeholder="Username" class="userbox-box" required autofocus ng-model="username">
+                   
+                    <input type="password" id="lPassword" placeholder="************" class="password-box" required ng-model="password">
 
-                        <p>Username</p>
-                        <input type="text" id="lUserName" placeholder="Username" class="userbox-box" required autofocus ng-model="username">
-                        <p>Password</p>
-                        <input type="password" id="lPassword" placeholder="************" class="password-box" required ng-model="password">
-
-                        <button type="submit" class="login-button">
-                            <i class="fa fa-sign-in-alt"></i> SIGN IN
-                        </button>
+                    <div class="rDIV_I">
                         <button type="button" class="login-cancel-button">
                             <i class="fa fa-window-restore"></i> CANCEL
                         </button>
+                    </div>
 
+                    <div class="lDiv_I">
+                        <button type="submit" class="login-button">
+                            <i class="fa fa-sign-in-alt"></i> SIGN IN
+                        </button>
+                    </div>
+
+                    <div class="rDIV">
                         <a href="#">Reset Password</a>
+                    </div>
 
-                    </form>
-                </div>
+                    <div class="lDiv">
+                        <a href="#">Register</a>
+                    </div>
 
+                </form>
             </div>
-        </div>
-
 
     </div>
-
-
-
-
-
-
-
-
-    <!-- <button type="button" class="login-btn">LOGIN
-            <i class="fa fa-adjust"></i>
-        </button> -->
-</div>
