@@ -1,0 +1,155 @@
+.login-wrapper {
+    background-image: url(../../images/moscow.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size:100% 100%!important;
+    background-position:center;
+    height: 100vh;
+    
+}
+.login-box {
+    width: 400px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 10px 0px #000;
+    -webkit-transition: all linear 0.5s;
+    transition: all linear 0.5s;
+}
+
+.login-btn {
+    height: 40px;
+    width: 30%;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #000;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.login-box h1 {
+    color: #ffffff;
+    font-size: 55px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 1px 2px 3px #000;
+}
+
+
+
+@media screen and (max-width:450px) {
+    .login-box {
+        background: red;
+        width: 300px;
+        height: 500px;
+        margin-top:-2px;
+        opacity: 0.5;
+    }
+    .login-box h1 {
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+        text-shadow: 1px 2px 3px #000;
+    }
+   
+}
+
+@media screen and (min-width:451px) and (max-width:540px) {
+    .login-box {
+        background: green;
+    }
+   
+}
+
+@media screen and (min-width:541px) and (max-width:768px) {
+    .login-box {
+        background: blue;
+        width: 400px;
+        height: 250px;
+        top: 45%;
+        opacity: 0.5;
+    }
+    .login-box h1 {
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+        text-shadow: 1px 2px 3px #000;
+    }
+    
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .login-box {
+        background: pink;
+        width: 400px;
+        height: 500px;
+        opacity: 0.6;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        position: absolute;
+        box-sizing: border-box;
+        box-shadow: 0px 10px 10px 0px #000;
+        -webkit-transition: all linear 0.5s;
+        transition: all linear 0.5s;
+    }
+   
+}
+
+@media screen and (min-width:1025px) and (max-width:1200px) {
+    .login-box {
+        background: yellow;
+    }
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+@media screen and (min-width:1201px) {
+    .login-wrapper {
+        background-size:100% 100%!important;
+        height: 100vh;
+        
+    }
+    .login-box {
+        background: maroon;
+        width: 30%;
+        height: 500px;
+        opacity: 0.6;
+        top: 50%;
+        left: 50%;
+      
+        transform: translate(-50%, -50%);
+        position: absolute;
+      
+        box-shadow: 0px 10px 10px 0px #000;
+        -webkit-transition: all linear 0.5s;
+        transition: all linear 0.5s;
+    }
+    .login-box h1 {
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+        text-shadow: 1px 2px 3px #000;
+    }
+}
