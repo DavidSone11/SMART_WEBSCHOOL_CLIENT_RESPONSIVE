@@ -7,10 +7,21 @@
             </span> -->
 
             <div class="left-content">
-dasdas
+                dasdas
             </div>
             <div class="right-content">
-dasdas
+                <form role="form" ng-submit="login(username,password)">
+                    <input type="text" id="lUserName" placeholder="Username" class="userbox-box" required autofocus ng-model="username">
+
+                    <input type="password" id="lPassword" placeholder="Password" class="password-box" required ng-model="password">
+
+                    <input type="submit" class="login-button" value="SIGN IN" />
+                    <button type="button" class="login-cancel-button">
+                        <i class="fa fa-window-restore"></i> CANCEL
+                    </button>
+
+                </form>
+
             </div>
         </div>
 
