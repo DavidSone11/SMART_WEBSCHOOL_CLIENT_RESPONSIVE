@@ -23,7 +23,16 @@
     <br>
 
     <form enctype="multipart/form-data">
-        <input type="file" flow-btn flow-directory /> Input OR Other element as upload button
+        <input type="file" flow-btn /> Input OR Other element as upload button
+
+        <tr ng-repeat="file in $flow.files">
+            <td>{{$index+1}}</td>
+            <td>{{file.name}}</td>
+        </tr>
     </form>
+
+    <angucomplete-alt id="ex1" placeholder="Search Images" pause="100" selected-object="selectedCountry" local-data="countries"
+        search-fields="name" title-field="name" minlength="1" input-class="form-control form-control-small" />
+
 
 </div>
