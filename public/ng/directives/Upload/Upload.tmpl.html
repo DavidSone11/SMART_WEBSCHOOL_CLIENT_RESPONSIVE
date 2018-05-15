@@ -31,8 +31,18 @@
         </tr>
     </form>
 
-    <angucomplete-alt id="ex1" placeholder="Search Images" pause="100" selected-object="selectedCountry" local-data="countries"
-        search-fields="name" title-field="name" minlength="1" input-class="form-control form-control-small" />
 
+    
+    <br>
+    <br>
+
+    <angucomplete-alt id="ddlHeadStation" placeholder="Search images" input-name="headstation" pause="400" selected-object="SelectedImage"
+        remote-url-data-field="" title-field="originalFileName" description-field="filename" remote-api-handler="getUserUploads"
+        minlength="2" input-class="autocomplet-style" match-class="highlight"></angucomplete-alt>
+
+        <!-- <img ng-src="data:image/png;base64,{{user.data.data}}"/> -->
+        <!-- <img src="data:{{contentType}};base64,{{user.data}}"/> -->
+        <!-- <img ng-src="data:image/PNG;base64,{{user.data}}"> -->
+        <img ng-src="data:{{contentType}};base64,{{base64String}}" width="850" height="auto">
 
 </div>
