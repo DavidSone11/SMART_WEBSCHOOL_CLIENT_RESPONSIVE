@@ -25,10 +25,10 @@
         height: 500px;
         top: 50%;
         left: 50%;
-        background: rgba(255, 0, 0, 0.9);
+        background: rgba(0, 0, 0, 0.4);
         transform: translate(-50%, -50%);
         position: absolute;
-        box-shadow: 0px 15px 40px rgba(0, 0, 0, .5);
+        box-shadow: 0px 15px 40px rgba(255, 0, 0, .5);
       
     }
    
@@ -124,64 +124,15 @@
         height: 100vh;
     }
     .login-box {
-        width: 80%;
-        height: 150px;
-        top: 25%;
+        width: 84%;
+        height: 315px;
+        top: 50%;
         left: 50%;
+        background: rgba(0, 0, 0, 0.4);
         transform: translate(-50%, -50%);
         position: absolute;
         box-shadow: 0px 15px 40px rgba(0, 0, 0, .5);
-        background: #3498DB;
-    }
-  
-   
-   
-   
-}
-
-@media screen and (min-width:769px) and (max-width:1024px) {
-    .login-box {
-        background: pink;
-        width: 400px;
-        height: 500px;
-        opacity: 0.6;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translateX(-50%) translateY(-50%);
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        position: absolute;
-        box-sizing: border-box;
-        box-shadow: 0px 10px 10px 0px #000;
-        -webkit-transition: all linear 0.5s;
-        transition: all linear 0.5s;
-    }
-}
-
-@media screen and (min-width:1025px) and (max-width:1200px) {
-    .login-box {
-        background: yellow;
-        width: 40%;
-        height: 400px;
-    }
-}
-
-@media screen and (min-width:1201px) {
-    .login-wrapper {
-        background-size: 100% 100% !important;
-        height: 100vh;
-    }
-    .login-box {
-        width: 35%;
-        height: 500px;
-        top: 50%;
-        left: 50%;
-        background: rgba(0, 0, 0, 0.9);
-        transform: translate(-50%, -50%);
-        position: absolute;
-        box-shadow: 0px 15px 40px rgba(0, 0, 0, .5);
-        -webkit-transition: all linear 0.5s;
-        transition: all linear 0.5s;
+       
     }
    
     .login-box input {
@@ -232,6 +183,133 @@
     .login-box button.login-cancel-button i {
         font-size: 25px !important;
     }
+    .login-box button.login-cancel-button:hover {
+        background-color: rgba(68, 0, 255, 0.8);
+    }
+    .login-box a {
+        font-size: 15px;
+        text-decoration: none;
+        color: #3498DB;
+        font-weight: bold;
+        margin-bottom: 20px !important;
+        padding: 20px 0 0 20px;
+    }
+    .login-box .rDIV {
+        width: 50%;
+        float: right;
+        padding: 0 0 0 30px;
+    }
+    .login-box .lDiv {
+        width: 50%;
+        float: left;
+        padding: 0 0 0 30px;
+    }
+    .login-box .rDIV_I {
+        width: 50%;
+        float: right;
+        padding: 0 0 0 30px;
+    }
+    .login-box .lDiv_I {
+        width: 50%;
+        float: left;
+        padding: 0 0 0 30px;
+    }
+   
+   
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .login-box {
+        background: pink;
+        width: 400px;
+        height: 500px;
+        opacity: 0.6;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        position: absolute;
+        box-sizing: border-box;
+        box-shadow: 0px 10px 10px 0px #000;
+        -webkit-transition: all linear 0.5s;
+        transition: all linear 0.5s;
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width:1200px) {
+    .login-box {
+        background: yellow;
+        width: 40%;
+        height: 400px;
+    }
+}
+
+@media screen and (min-width:1201px) {
+    .login-wrapper {
+        background-size: 100% 100% !important;
+        height: 100vh;
+    }
+    .login-box {
+        width: 35%;
+        height: 500px;
+        top: 50%;
+        left: 50%;
+        background: rgba(0, 0, 0, 0.4);
+        transform: translate(-50%, -50%);
+        position: absolute;
+        box-shadow: 0px 15px 40px rgba(0, 0, 0, .5);
+        -webkit-transition: all linear 0.5s;
+        transition: all linear 0.5s;
+    }
+   
+    .login-box input {
+        margin: 60px 0px 30px 20px;
+    }
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+        width: 90%;
+        outline: none;
+        border: none;
+        background: transparent;
+        border-bottom: 2px solid #C0392B;
+        color: #fff;
+        padding: 1px 4px 6px 0px;
+    }
+    .login-box button {
+        margin-bottom: 5px;
+    }
+    .login-box button.login-button {
+        color: #fff;
+        font-size: 15px !important;
+        background-color: rgba(255, 204, 0, 0.8);
+        cursor: pointer;
+        height: 40px;
+        width: 70%;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+        
+    }
+    .login-box button.login-cancel-button i,
+    .login-box button.login-button i {
+        font-size: 25px !important;
+    }
+    .login-box button.login-button:hover {
+        background-color: rgba(68, 0, 255, 0.8);
+    }
+    .login-box button.login-cancel-button {
+        color: #fff;
+        font-size: 15px !important;
+        background-color: rgba(255, 204, 0, 0.8);
+        cursor: pointer;
+        height: 40px;
+        width: 70%;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+    }
+    
     .login-box button.login-cancel-button:hover {
         background-color: rgba(68, 0, 255, 0.8);
     }
