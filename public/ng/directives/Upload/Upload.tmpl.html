@@ -40,9 +40,12 @@
         remote-url-data-field="" title-field="originalFileName" description-field="filename" remote-api-handler="getUserUploads"
         minlength="2" input-class="autocomplet-style" match-class="highlight"></angucomplete-alt>
 
-        <!-- <img ng-src="data:image/png;base64,{{user.data.data}}"/> -->
-        <!-- <img src="data:{{contentType}};base64,{{user.data}}"/> -->
-        <!-- <img ng-src="data:image/PNG;base64,{{user.data}}"> -->
-        <img ng-src="data:{{contentType}};base64,{{base64String}}" width="850" height="auto">
+
+
+        <frameset rows="100%">
+                <img ng-src="data:{{contentType}};base64,{{base64String}}" width="850" height="auto">
+        </frameset>
+
+        
 
 </div>

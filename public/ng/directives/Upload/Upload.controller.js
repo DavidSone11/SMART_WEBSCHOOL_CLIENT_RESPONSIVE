@@ -15,11 +15,8 @@ app.controller("UploadController", ['$scope', '$timeout', '$http', function ($sc
 
     $scope.SelectedImage = function (selected) {
         if (selected) {
-
             $scope.user.data = selected.originalObject.img.data["data"];
             $scope.contentType = selected.originalObject.img.contentType;
-            // $scope.base64String = btoa(String.fromCharCode.apply(null, new Uint8Array(selected.originalObject.img.data["data"])));
-            // $scope.base64String = btoa(selected.originalObject.img.data["data"]);
             $scope.base64String = _arrayBufferToBase64(selected.originalObject.img.data["data"]);
 
         }
