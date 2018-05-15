@@ -45,3 +45,49 @@ body {
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
 }
+
+
+
+@media screen and (max-width:450px) {
+   
+    .page-wrapper {
+        margin-left: 80px;
+        padding: 100px 5px;
+    }
+}
+
+
+
+
+@media (min-width:451px) and (max-width:540px) {
+    
+}
+
+@media (min-width:541px) and (max-width:768px) {
+
+
+}
+
+@media screen and (min-width:600px) {
+  
+    .page-wrapper {
+        margin-left: 80px;
+        padding: 100px 5px;
+    }
+    
+}
+
+@media screen and (min-width:1000px) {
+  
+    .page-wrapper {
+        margin: 75px 0 0 265px;
+        position: inherit;
+        margin: 75px 0 0 265px;
+        padding: 0 10px 0 0;
+    }
+ 
+}
+
+@media (min-width:769px) and (min-width:1000px) {
+
+}
