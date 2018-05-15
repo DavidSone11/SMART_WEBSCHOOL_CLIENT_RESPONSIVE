@@ -52,8 +52,9 @@
     .login-box button.login-button i {
         font-size: 15px !important;
     }
+    .login-box button.login-cancel-button:hover,
     .login-box button.login-button:hover {
-        background-color: rgba(68, 0, 255, 0.8);
+        background-color: rgba(255, 0, 0, 0.8);
     }
     .login-box button.login-cancel-button {
         color: #fff;
@@ -66,10 +67,7 @@
         cursor: pointer;
         border-radius: 20px;
     }
-    
-    .login-box button.login-cancel-button:hover {
-        background-color: rgba(68, 0, 255, 0.8);
-    }
+
     .login-box a {
         font-size: 15px;
         text-decoration: none;
