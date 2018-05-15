@@ -45,6 +45,26 @@ body {
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
 }
+nav{
+    background: yellowgreen!important;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+
+}
+nav h1{
+    text-align: center;
+}
+
+aside{
+    background:goldenrod!important;
+    width: 250px;
+    height: 100vh;
+    position: absolute; 
+}
+aside h1{
+    text-align: center;
+}
 
 
 
@@ -80,10 +100,10 @@ body {
 @media screen and (min-width:1000px) {
   
     .page-wrapper {
-        margin: 75px 0 0 265px;
+        margin: 0px 0 0 230px;
         position: inherit;
-        margin: 75px 0 0 265px;
         padding: 0 10px 0 0;
+        min-height: 650px;
     }
  
 }

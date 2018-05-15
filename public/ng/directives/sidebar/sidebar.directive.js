@@ -1,6 +1,6 @@
 
 var app = angular.module("sbAdminApp");
-app.directive("sideBar", ['$compile', function ($compile) {
+app.directive("sidebar", ['$compile', function ($compile) {
     return {
         restrict: 'E',
         replace: true,
