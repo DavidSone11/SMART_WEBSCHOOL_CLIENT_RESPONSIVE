@@ -45,7 +45,8 @@ var r = (function mainFun() {
                             files: [
                                 'ng/directives/home/home.directive.js',
                                 'ng/directives/home/home.controller.js',
-                                'ng/directives/sidebar/sidebar.directive.js',
+                                'ng/directives/l_sidebar/l_sidebar.directive.js',
+                                'ng/directives/r_sidebar/r_sidebar.directive.js',
                                 'ng/directives/header/header.directive.js',
                                 'ng/directives/footer/footer.directive.js'
 
