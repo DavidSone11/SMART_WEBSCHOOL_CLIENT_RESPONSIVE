@@ -10,8 +10,8 @@ body {
 }
 
 .wrapper {
-    /* position: relative; */
-    top: 20px !important;
+    position: relative;
+    /* top: 20px !important; */
     height: 100vh;
     width: 100%;
     background-color: rgb(20, 13, 121) !important;
