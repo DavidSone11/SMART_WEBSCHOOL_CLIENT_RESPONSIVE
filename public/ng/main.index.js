@@ -34,6 +34,39 @@ var r = (function mainFun() {
                     }]
                 }
 
+            }).state('home', {
+                url: '/home',
+                templateUrl: 'ng/directives/home/home.tmpl.html',
+                controller: 'HomeController',
+                resolve: {
+                    loadExternalFiles: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        return $ocLazyLoad.load({
+                            name: 'dIApp',
+                            files: [
+                                'ng/directives/home/home.directive.js',
+                                'ng/directives/home/home.controller.js',
+                                
+
+                            ]
+                        });
+                    }]
+                }
+            })
+            .state('home.dashboard', {
+                url: '/dashboard',
+                templateUrl: 'ng/directives/dashboard/dashboard.tmpl.html',
+                controller: 'DashboardController',
+                resolve: {
+                    loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+
+                        return $ocLazyLoad.load([
+                            'ng/directives/dashboard/dashboard.controller.js',
+                           
+
+                        ]
+                        );
+                    }]
+                }
             })
     });
 }());

@@ -9,7 +9,7 @@ app.controller("LoginController", function ($scope, $state, $window) {
 
 
 
-
+        $state.go("home.dashboard");
 
     }
 
