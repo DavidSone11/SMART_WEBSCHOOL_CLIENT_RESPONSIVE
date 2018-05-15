@@ -24,6 +24,36 @@ body {
 }
 
 .slide {
+   
+    -webkit-animation: fadeInRight 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadeInRight 2s; /* Firefox < 16 */
+     -ms-animation: fadeInRight 2s; /* Internet Explorer */
+      -o-animation: fadeInRight 2s; /* Opera < 12.1 */
+         animation: fadeInRight 2s;
+}
+
+
+.slide.ng-enter {
+    -webkit-animation: fadeInRight 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadeInRight 2s; /* Firefox < 16 */
+     -ms-animation: fadeInRight 2s; /* Internet Explorer */
+      -o-animation: fadeInRight 2s; /* Opera < 12.1 */
+         animation: fadeInRight 2s;
+}
+
+@keyframes fadeInRight {
+    0% {
+       opacity: 0;
+       transform: translateX(20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ } 
+
+/* 
+.slide {
     -webkit-transition: -webkit-transform .7s ease-in-out;
     -moz-transition: -moz-transform .7s ease-in-out;
     -o-transition: -o-transform .7s ease-in-out;
@@ -47,6 +77,59 @@ body {
 .slide.ng-leave.ng-leave-active {
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
+} */
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Firefox < 16 */
+
+@-moz-keyframes fadeInRight {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+
+@-webkit-keyframes fadeInRight {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Internet Explorer */
+
+@-ms-keyframes fadeInRight {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Opera < 12.1 */
+
+@-o-keyframes fadeInRight {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 nav {
@@ -60,22 +143,32 @@ nav h1 {
     text-align: center;
 }
 
-aside {
-    background: goldenrod !important;
+
+aside.left {
+    background: rgb(32, 218, 72) !important;
     width: 15%;
     height: 100%;
-    /* max-height: 100%; */
+   
     position: absolute;
+   
 }
-aside.left{
+aside.left {
     float: left;
     border-left: none;
 }
-
-aside.right{
+aside.right {
+    background: goldenrod !important;
+    width: 15%;
+    height: 100%;
+    max-height: 100%;
+    position: absolute;
+    right: 0;
+}
+aside.right {
     float: right;
     border-right: none;
 }
+
 aside h1 {
     text-align: center;
 }
@@ -102,18 +195,18 @@ footer h1 {
 
 @media (min-width:541px) and (max-width:768px) {}
 
-@media screen and (min-width:600px) {
+/* @media screen and (min-width:600px) {
     .page-wrapper {
         margin-left: 80px;
         padding: 100px 5px;
     }
-}
+} */
 
-@media screen and (min-width:1000px) {
+@media screen and (min-width:1201px) { 
     .page-wrapper {
-        margin: 0px 0 0 230px;
+        margin: 0px 202px 0 202px;
         position: relative;
-        padding: 100px 0 0 70px;
+        padding: 30px 0 0 30px;
         min-height: 650px;
     }
     .page-wrapper {
