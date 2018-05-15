@@ -16,6 +16,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    /* display: table; */
 }
 
 .clear {
@@ -53,6 +54,7 @@ body {
     min-height: 800px;
     height: 100%;
     background: red;
+    /* display: table-cell; */
 }
 
 .r_sidebar {
@@ -61,13 +63,16 @@ body {
     background: yellow;
     min-height: 800px;
     height: 100%;
+    /* display: table-cell; */
 }
 
 .main-content {
-    background: pink;
+    background: #ffffff;
     padding: 50px 0 0 52px;
     margin: 0 200px 0 199px;
     min-height: 850px;
+    /* display: table-cell; */
+    border:2px solid green;
     
 }
 

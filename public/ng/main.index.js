@@ -87,6 +87,22 @@ var r = (function mainFun() {
                     }],
 
                 }
+            }).state('home.upload', {
+                url: '/upload',
+                template: '<upload></upload>',
+                controller: 'UploadController',
+                resolve: {
+                    loadAllMyDirectives: ['$ocLazyLoad', function ($ocLazyLoad) {
+
+                        return $ocLazyLoad.load([
+                            'ng/directives/Upload/Upload.controller.js',
+                            'ng/directives/Upload/Upload.directive.js',
+
+                        ]
+                        );
+                    }],
+
+                }
             })
     });
 }());
