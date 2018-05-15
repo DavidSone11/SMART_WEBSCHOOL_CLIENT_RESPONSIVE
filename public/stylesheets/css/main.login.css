@@ -5,109 +5,9 @@
     height: 100vh;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px){
-    .login-box {
-        width: 90%;
-        height: 500px;
-        top: 50%;
-        left: 50%;
-        background: rgba(255, 255, 255, 0.9);
-        transform: translate(-50%, -50%);
-        position: absolute;
-        box-shadow: 0px 15px 40px rgba(255, 0, 0, .5);
-      
-    }
-   
-    .login-box input {
-        margin: 60px 0px 30px 20px;
-    }
-    .login-box input[type="text"],
-    .login-box input[type="password"] {
-        width: 90%;
-        outline: none;
-        border: none;
-        background: transparent;
-        border-bottom: 2px solid #C0392B;
-        color: #fff;
-        padding: 1px 4px 6px 0px;
-    }
-    .login-box button {
-        margin-bottom: 5px;
-    }
-    .login-box button.login-button {
-        color: #fff;
-        font-size: 10px !important;
-        background-color: rgba(255, 204, 0, 0.8);
-        cursor: pointer;
-        height: 40px;
-        width: 70%;
-        border: none;
-        cursor: pointer;
-        border-radius: 20px;
-        
-    }
-    .login-box button.login-cancel-button i,
-    .login-box button.login-button i {
-        font-size: 15px !important;
-    }
-    .login-box button.login-button:hover {
-        background-color: rgba(68, 0, 255, 0.8);
-    }
-    .login-box button.login-cancel-button {
-        color: #fff;
-        font-size: 10px !important;
-        background-color: rgba(255, 204, 0, 0.8);
-        cursor: pointer;
-        height: 40px;
-        width: 70%;
-        border: none;
-        cursor: pointer;
-        border-radius: 20px;
-    }
-    
-    .login-box button.login-cancel-button:hover {
-        background-color: rgba(68, 0, 255, 0.8);
-    }
-    .login-box a {
-        font-size: 15px;
-        text-decoration: none;
-        color: #3498DB;
-        font-weight: bold;
-        margin-bottom: 20px !important;
-      
-    }
-    .login-box .rDIV {
-        width: 50%;
-        float: right;
-        padding: 0 0 0 15px;
-    }
-    .login-box .lDiv {
-        width: 50%;
-        float: left;
-        padding: 0 0 0 15px;
-    }
-    .login-box .rDIV_I {
-        width: 50%;
-        float: right;
-        padding: 0 0 0 5px;
-    }
-    .login-box .lDiv_I {
-        width: 50%;
-        float: left;
-        padding: 0 0 0 5px;
-    }
-   
-}
+
 /* Smartphones (portrait) ---------- */
 @media screen and (max-width: 320px){
-    /* styles */
-}
-/* Smartphones (landscape) ---------- */
-@media screen and (min-width: 321px){
-    /* styles */
-}
-
-@media screen and (max-width:450px) {
     .login-box {
         width: 90%;
         height: 500px;
@@ -200,13 +100,109 @@
     }
 }
 
-@media screen and (min-width:451px) and (max-width:540px) {
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .login-box {
+        width: 84%;
+        height: 300px;
+        top: 45%;
+        left: 50%;
+        background: rgba(0, 0, 0, 0.4);
+        transform: translate(-50%, -50%);
+        position: absolute;
+        box-shadow: 0px 15px 40px rgba(0, 0, 0, .5);
+       
+    }
+   
+    .login-box input {
+        margin: 60px 0px 30px 20px;
+    }
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+        width: 90%;
+        outline: none;
+        border: none;
+        background: transparent;
+        border-bottom: 2px solid #C0392B;
+        color: #fff;
+        padding: 1px 4px 6px 0px;
+    }
+    .login-box button {
+        margin-bottom: 5px;
+    }
+    .login-box button.login-button {
+        color: #fff;
+        font-size: 15px !important;
+        background-color: rgba(255, 204, 0, 0.8);
+        cursor: pointer;
+        height: 40px;
+        width: 70%;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+        
+    }
+    .login-box button.login-button i {
+        font-size: 25px !important;
+    }
+    .login-box button.login-button:hover {
+        background-color: rgba(68, 0, 255, 0.8);
+    }
+    .login-box button.login-cancel-button {
+        color: #fff;
+        font-size: 15px !important;
+        background-color: rgba(255, 204, 0, 0.8);
+        cursor: pointer;
+        height: 40px;
+        width: 70%;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+    }
+    .login-box button.login-cancel-button i {
+        font-size: 25px !important;
+    }
+    .login-box button.login-cancel-button:hover {
+        background-color: rgba(68, 0, 255, 0.8);
+    }
+    .login-box a {
+        font-size: 15px;
+        text-decoration: none;
+        color: #3498DB;
+        font-weight: bold;
+        margin-bottom: 20px !important;
+        padding: 20px 0 0 20px;
+    }
+    .login-box .rDIV {
+        width: 50%;
+        float: right;
+        padding: 0 0 0 30px;
+    }
+    .login-box .lDiv {
+        width: 50%;
+        float: left;
+        padding: 0 0 0 30px;
+    }
+    .login-box .rDIV_I {
+        width: 50%;
+        float: right;
+        padding: 0 0 0 30px;
+    }
+    .login-box .lDiv_I {
+        width: 50%;
+        float: left;
+        padding: 0 0 0 30px;
+    } 
+   
+}
+
+@media screen and (min-width:481px) and (max-width:540px) {
     .login-box {
         width: 84%;
         height: 550px;
         top: 50%;
         left: 50%;
-        background: rgba(0, 255, 0, 0.4);
+        background: rgba(0, 0, 0, 0.4);
         transform: translate(-50%, -50%);
         position: absolute;
         box-shadow: 0px 15px 40px rgba(0, 0, 0, .5);
@@ -490,16 +486,15 @@
 @media screen and (min-width:1025px) and (max-width:1200px) {
    
     .login-box {
-        width: 35%;
+        width: 50%;
         height: 500px;
         top: 50%;
         left: 50%;
-        background: rgba(255, 255, 0, 0.9);
+        background: rgba(0, 0, 0, 0.4);
         transform: translate(-50%, -50%);
         position: absolute;
         box-shadow: 0px 15px 40px rgba(0, 0, 0, .5);
-        -webkit-transition: all linear 0.5s;
-        transition: all linear 0.5s;
+      
     }
    
     .login-box input {
