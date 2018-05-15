@@ -6,7 +6,8 @@ var r = (function mainFun() {
         'oc.lazyLoad',
         'ngAnimate',
         'angular-loading-bar',
-        "ngSanitize"
+        "ngSanitize",
+        "flow"
     ]);
 
     var initInjector = angular.injector(['ng']);
