@@ -27,7 +27,7 @@ var r = (function mainFun() {
                         return $ocLazyLoad.load([
                             'ng/directives/login/login.directive.js',
                             'ng/directives/login/login.controller.js',
-                            
+
 
                         ]
                         );
@@ -46,8 +46,9 @@ var r = (function mainFun() {
                                 'ng/directives/home/home.directive.js',
                                 'ng/directives/home/home.controller.js',
                                 'ng/directives/sidebar/sidebar.directive.js',
-                                'ng/directives/header/header.directive.js'
-                                
+                                'ng/directives/header/header.directive.js',
+                                'ng/directives/footer/footer.directive.js'
+
 
                             ]
                         });
@@ -63,11 +64,27 @@ var r = (function mainFun() {
 
                         return $ocLazyLoad.load([
                             'ng/directives/dashboard/dashboard.controller.js',
-                           
+
 
                         ]
                         );
                     }]
+                }
+            }).state('home.user', {
+                url: '/user',
+                template: '<user></user>',
+                controller: 'UserController',
+                resolve: {
+                    loadAllMyDirectives: ['$ocLazyLoad', function ($ocLazyLoad) {
+
+                        return $ocLazyLoad.load([
+                            'ng/directives/User/User.controller.js',
+                            'ng/directives/User/User.directive.js',
+
+                        ]
+                        );
+                    }],
+
                 }
             })
     });
