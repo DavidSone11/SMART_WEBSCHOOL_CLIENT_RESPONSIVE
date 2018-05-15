@@ -67,10 +67,15 @@ aside {
     /* max-height: 100%; */
     position: absolute;
 }
-aside left{
-    float: left
+aside.left{
+    float: left;
+    border-left: none;
 }
 
+aside.right{
+    float: right;
+    border-right: none;
+}
 aside h1 {
     text-align: center;
 }
