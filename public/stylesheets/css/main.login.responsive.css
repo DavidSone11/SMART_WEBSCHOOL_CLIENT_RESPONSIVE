@@ -11,6 +11,12 @@
     opacity: 0;
     /* transform: scale(0.5,0.5); */
     transform: skew(60deg, 60deg);
+    /* transform: skew(20deg, -60deg); */
+    /* transform: translateX(50px);
+    transform: translateY(50px); */
+    /* transform: rotate(-120deg); */
+    /* transform: scale(1, 3); */
+    /* transform: matrix(1, -0.3, 0, 1, 0, 0); */
 }
 
 
@@ -29,17 +35,18 @@
     }
    
     .login-box input {
-        margin: 60px 0px 30px 20px;
+        margin: 60px 0px 30px 5px;
     }
     .login-box input[type="text"],
     .login-box input[type="password"] {
-        width: 90%;
-        outline: none;
-        border: none;
-        background: transparent;
-        border-bottom: 2px solid #C0392B;
+        height: 40px;
+        width: 95%;
+        outline: 0;
+        border: 1px solid #fff;
         color: #fff;
-        padding: 1px 4px 6px 0px;
+        background:transparent;
+        padding: 0px 0 0px 10px;
+        
     }
     .login-box button {
         margin-bottom: 5px;
@@ -125,13 +132,14 @@
     }
     .login-box input[type="text"],
     .login-box input[type="password"] {
-        width: 90%;
-        outline: none;
-        border: none;
-        background: transparent;
-        border-bottom: 2px solid #C0392B;
+        height: 40px;
+        width: 95%;
+        outline: 0;
+        border: 1px solid #fff;
         color: #fff;
-        padding: 1px 4px 6px 0px;
+        background:transparent;
+        padding: 0px 0 0px 10px;
+        
     }
     .login-box button {
         margin-bottom: 5px;
@@ -220,13 +228,14 @@
     }
     .login-box input[type="text"],
     .login-box input[type="password"] {
-        width: 90%;
-        outline: none;
-        border: none;
-        background: transparent;
-        border-bottom: 2px solid #C0392B;
+        height: 40px;
+        width: 95%;
+        outline: 0;
+        border: 1px solid #fff;
         color: #fff;
-        padding: 1px 4px 6px 0px;
+        background:transparent;
+        padding: 0px 0 0px 10px;
+        
     }
     .login-box button {
         margin-bottom: 5px;
@@ -318,13 +327,14 @@
     }
     .login-box input[type="text"],
     .login-box input[type="password"] {
-        width: 90%;
-        outline: none;
-        border: none;
-        background: transparent;
-        border-bottom: 2px solid #C0392B;
+        height: 40px;
+        width: 95%;
+        outline: 0;
+        border: 1px solid #fff;
         color: #fff;
-        padding: 1px 4px 6px 0px;
+        background:transparent;
+        padding: 0px 0 0px 10px;
+        
     }
     .login-box button {
         margin-bottom: 5px;
@@ -414,13 +424,14 @@
     }
     .login-box input[type="text"],
     .login-box input[type="password"] {
-        width: 90%;
-        outline: none;
-        border: none;
-        background: transparent;
-        border-bottom: 2px solid #C0392B;
+        height: 40px;
+        width: 95%;
+        outline: 0;
+        border: 1px solid #fff;
         color: #fff;
-        padding: 1px 4px 6px 0px;
+        background:transparent;
+        padding: 0px 0 0px 10px;
+        
     }
     .login-box button {
         margin-bottom: 5px;
@@ -508,13 +519,14 @@
     }
     .login-box input[type="text"],
     .login-box input[type="password"] {
-        width: 90%;
-        outline: none;
-        border: none;
-        background: transparent;
-        border-bottom: 2px solid #C0392B;
+        height: 40px;
+        width: 95%;
+        outline: 0;
+        border: 1px solid #fff;
         color: #fff;
-        padding: 1px 4px 6px 0px;
+        background:transparent;
+        padding: 0px 0 0px 10px;
+        
     }
     .login-box button {
         margin-bottom: 5px;
@@ -603,13 +615,14 @@
     }
     .login-box input[type="text"],
     .login-box input[type="password"] {
-        width: 90%;
-        outline: none;
-        border: none;
-        background: transparent;
-        border-bottom: 2px solid #C0392B;
+        height: 40px;
+        width: 95%;
+        outline: 0;
+        border: 1px solid #fff;
         color: #fff;
-        padding: 1px 4px 6px 0px;
+        background:transparent;
+        padding: 0px 0 0px 10px;
+        
     }
     .login-box button {
         margin-bottom: 5px;
@@ -682,79 +695,3 @@
 
 
 
-.forget-password-box {
-    width: 600px;
-    height: 420px;
-    background: rgba(0, 0, 0, 0.5);
-    top: 50%;
-    left: 50%;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    position: absolute;
-    box-sizing: border-box;
-    box-shadow: 0px 10px 10px 0px #000;
-    -webkit-transition: all linear 0.5s;
-    transition: all linear 0.5s;
-}
-
-.forget-password-box input[type="text"] {
-    height: 40px;
-    width: 95%;
-    outline: 0;
-    border: 1px solid #fff;
-    color: #fff;
-    background: 0 0;
-    padding: 0px 0 0px 10px;
-    margin: 10px 0 0 10px;
-}::placeholder {
-    color: rgba(0, 0, 0, 0.9);
-    margin: 0;
-    padding: 0;
-}
-.forget-password-box h1{
-    padding: 8px 90px;
-    color:#FFFF00!important;
-    opacity: 0.5;
-}
-
-.forget-password-box p{
-    margin: 10px 0 0 90px;
-    color:#8E44AD!important;
-    opacity: 0.8;
-}
-.forget-password-box input[type="submit"].reset-password-button {
-    height: 40px;
-    width: 100%;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #58D68D;
-    font-size: 15px;
-    cursor: pointer;
-    border-radius: 20px;
-}
-
-.forget-password-box input[type="submit"].reset-password-button:hover {
-    color: #fff;
-    background: rgba(202, 215, 14, 0.9) !important;
-    
-}
-
-.forget-password-box input[type="button"].only-reset-password-button {
-    height: 40px;
-    width: 100%;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #000;
-    font-size: 15px;
-    cursor: pointer;
-    border-radius: 20px;
-}
-
-.forget-password-box input[type="button"].only-reset-password-button:hover {
-    color: #fff;
-    background: rgba(202, 215, 14, 0.9) !important;
-    
-}
