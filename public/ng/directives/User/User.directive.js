@@ -5,6 +5,7 @@ app.directive("user", ['$compile', function ($compile) {
         restrict: 'E',
         replace: true,
         templateUrl: 'ng/directives/User/User.directive.html',
+        scope: true,
         compile: function (elem, attrs) {
             // elem.css("border-bottom", "1px solid grey");
             // elem.css("border-top", "1px solid grey");
