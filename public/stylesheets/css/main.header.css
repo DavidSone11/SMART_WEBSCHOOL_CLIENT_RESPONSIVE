@@ -4,7 +4,7 @@
     height: 80px;
     position: absolute;
     color:#fff;
-    line-height: 5px;
+    line-height: 80px;
     top:0;
 }
 
@@ -19,7 +19,7 @@
     height: 100%;
     min-height: 80px;
     background: rgb(255, 0, 157);
-    padding: 30px 0 0 0px;
+    padding: 0px 0 0 0px;
 }
 
 .main-header .header-right-content {
@@ -27,5 +27,5 @@
     width: 50%;
     min-height: 80px;
     background: gold;
-    padding: 30px 0 0 0px;
+    padding: 0px 0 0 0px;
 }
