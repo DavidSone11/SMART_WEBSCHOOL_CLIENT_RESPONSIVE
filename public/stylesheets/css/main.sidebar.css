@@ -1,11 +1,25 @@
 .l_sidebar {
+    float: left;
     min-height: 100%;
     width: 230px;
     padding: 0;
-    position: absolute;
+    position: fixed;
     background: rgba(42, 63, 84, 1);
-    display: flex;
-    z-index: 1;
+    /* display: flex; */
+    top: 0;
+    bottom: 0;
+    z-index: 9999;
+    box-shadow: 3px 0px 9px #888888;
+}
+
+.l_sidebar:hover {
+    overflow-y: scroll;
+}
+
+.l_sidebar::-webkit-scrollbar {
+    width: 7px;
+    border: 2px solid #555555;
+    background-color: #F5F5F5;
 }
 
 .r_sidebar {
@@ -74,7 +88,7 @@ Left sidebar footer
 }
 
 .l_sidebar footer.sidebar-footer .fa {
-    color:rgb(210, 214, 202);   
+    color: rgb(210, 214, 202);
     width: 20px;
     opacity: 0.9;
     font-style: normal;
@@ -83,34 +97,37 @@ Left sidebar footer
     -moz-osx-font-smoothing: grayscale;
 }
 
-
 .l_sidebar footer.sidebar-footer a {
     padding: 0px 13px;
 }
 
-.sidebar-content-wrapper ul{
-    margin: 0;
-    padding:0;
+.sidebar-content-wrapper {
+    margin: 0 0 0 0;
 }
 
-.sidebar-content-wrapper ul li{
-    list-style:none;
+.sidebar-content-wrapper ul {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-content-wrapper ul li {
+    list-style: none;
     padding: 25px 0 0 0;
 }
 
-.sidebar-content-wrapper ul li a{
+.sidebar-content-wrapper ul li a {
     text-decoration: none;
     padding: 0 0 0 25px;
-    
 }
-.sidebar-content-wrapper ul li p{
-    color:#fff;    
+
+.sidebar-content-wrapper ul li p {
+    color: #fff;
     display: inline;
     padding: 0 0 0 25px;
 }
 
 .sidebar-content-wrapper ul li i {
-    color:rgb(210, 214, 202);   
+    color: rgb(210, 214, 202);
     width: 20px;
     opacity: 0.9;
     font-style: normal;
@@ -120,13 +137,13 @@ Left sidebar footer
 }
 
 .sidebar-content-wrapper a span.fa {
-    text-align: right!important;
+    text-align: right !important;
     margin-right: 10px;
 }
+
 .sidebar-content-wrapper span.fa {
     float: right;
     margin-top: 5px;
     font-size: 10px;
     color: #C4CFDA;
 }
-
