@@ -8,31 +8,43 @@ app.directive("rsidebar", ['$compile', function ($compile) {
 
         controller: function ($scope) {
 
-            $scope.isToggle = true;
+            $scope.isToggle = false;
 
             $scope.rightToggler = function () {
+                $(function () {
+                    if ($scope.isToggle) {
 
-                if ($scope.isToggle) {
-                    $(function () {
                         $('#rightSidebar').animate({ width: "0px" }, "slow");
-                        $('#rightoggleBtn').animate({ left: "1300px" }, "slow");
-                        // $("#main-page-wrapper").css("background-color", 'black');
-                        // $("#main-page-wrapper").css("opacity", 0.4);
-                        $('body').css("background-color", 'black');
-                        $("body").css("opacity", 0.2);
+                        $('#rightSidebar').animate({ width: "0px" }, "slow");
+                        $('#rightoggleBtn').animate({ left: "-60px" }, "slow");
+                        // $("#main-page-wrapper").addClass("demo-nifty-settings in");
+                        
+                        // $("#left-sidebar").addClass("demo-nifty-settings in");
 
-                    });
-
-                } else {
-
-                    $(function () {
-                        $('#rightSidebar').animate({ width: "83%" }, "slow");
-                        $('#rightoggleBtn').animate({ left: "178px" }, "slow");
                         // $('body').css("background-color", 'black');
-                        $("body").css("opacity",1);
-                    });
+                        // $("body").css("opacity", 0.4);
+                        // $("#main-page-wrapper").css("opacity", 1);
 
-                }
+
+
+                    } else {
+
+
+                        $('#rightSidebar').animate({ width: "83%" }, "slow");
+                        // $("#main-page-wrapper").removeClass("demo-nifty-settings in");
+                        // $("#left-sidebar").removeClass("demo-nifty-settings in");
+
+                        // $('body').css("background-color", 'black');
+                        // $("body").css("opacity", 1);
+
+                        // $('#main-page-wrapper').css("background-color", 'black');
+
+                        // $("#main-page-wrapper").css("opacity", 0.2);
+
+
+
+                    }
+                });
 
                 $scope.isToggle = !$scope.isToggle;
 

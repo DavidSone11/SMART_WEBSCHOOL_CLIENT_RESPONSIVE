@@ -3,11 +3,8 @@
 ul.breadcrumb {
     padding: 10px 10px;
     list-style: none;
-    background-color: #e2dfdf;
     width: 100%;
-    max-width: 400px;
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;
+   
 }
 
 /* Display list items side by side */
