@@ -8,7 +8,7 @@
     /* display: flex; */
     top: 0;
     bottom: 0;
-    z-index: 9999;
+    z-index: -9999;
     box-shadow: 3px 0px 9px #888888;
 }
 
@@ -31,16 +31,7 @@
     height: 100px;
 }
 
-.r_sidebar {
-    float: right;
-    width: 80%;
-    background: #e2e24a;
-    height: 100%;
-    min-height: 600px;
-    z-index: -9999;
-    margin: 80px 0px 0 0;
-    box-shadow: 10px 0 25px #888888;
-}
+
 
 .sidebar-header {
     margin: 0px 0 0 3px;
