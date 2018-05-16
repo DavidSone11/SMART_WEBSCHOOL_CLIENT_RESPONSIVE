@@ -55,6 +55,10 @@
 
 
     <picture rows="100%" class="imgBox">
+
+        <div ng-show="isLoading">
+            <i class="fa fa-spinner"></i>
+        </div>
         <img ng-src="data:{{contentType}};base64,{{base64String}}" width="850" height="auto">
     </picture>
 

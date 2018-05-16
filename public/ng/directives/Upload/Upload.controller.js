@@ -3,12 +3,18 @@ var app = angular.module("sbAdminApp");
 app.controller("UploadController", ['$scope', '$timeout', '$http', function ($scope, $timeout, $http) {
 
     $scope.files = [];
+    $scope.isLoading = false;
     $scope.user = {
         data: ''
     }
 
     $scope.getUserUploads = function (query, timeout) {
-        return $http.get('http://localhost:4000/api/v1/userUpload/findByfilename?name=' + query);
+        
+        
+            return $http.get('http://localhost:4000/api/v1/userUpload/findByfilename?name=' + query);
+        
+        
+
 
     }
 
@@ -19,7 +25,7 @@ app.controller("UploadController", ['$scope', '$timeout', '$http', function ($sc
             $scope.contentType = selected.originalObject.img.contentType;
             $scope.base64String = _arrayBufferToBase64(selected.originalObject.img.data["data"]);
 
-        }else{
+        } else {
             $scope.base64String = null;
         }
     };
