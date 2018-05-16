@@ -28,28 +28,6 @@ body {
     clear: both;
 }
 
-.l_sidebar {
-    float: left;
-    width: 200px;
-    height: 100%;
-    min-height: 800px;
-    background: red;
-    position: absolute;
-    top: 0;
-    z-index: -9999;
-    bottom: 0;
-}
-
-.r_sidebar {
-    float: right;
-    width: 200px;
-    background: yellow;
-    height: 100%;
-    min-height: 850px;
-    z-index: -9999;
-    bottom: 0;
-    /* display: table-cell; */
-}
 
 .main-content {
     background: #ffffff;
