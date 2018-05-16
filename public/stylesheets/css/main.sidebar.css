@@ -69,7 +69,7 @@
     padding: 20px 0;
     width: 200px;
     height: 50px;
-    background: rgb(4, 74, 143);
+    background: rgba(37, 67, 97,0.9);
     z-index: 9999;
 }
 
