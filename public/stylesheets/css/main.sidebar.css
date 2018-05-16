@@ -17,9 +17,18 @@
 }
 
 .l_sidebar::-webkit-scrollbar {
-    width: 7px;
-    border: 2px solid #555555;
-    background-color: #F5F5F5;
+    width: 5px;
+    height: 100%;
+}
+
+.l_sidebar::-webkit-scrollbar {
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    background-color: rgb(67, 102, 139);
+}
+
+.l_sidebar::-webkit-scrollbar-thumb {
+    height: 100px;
 }
 
 .r_sidebar {
