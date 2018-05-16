@@ -28,8 +28,6 @@ body {
     clear: both;
 }
 
-
-
 .l_sidebar {
     float: left;
     width: 200px;
@@ -57,7 +55,7 @@ body {
     background: #ffffff;
     padding: 0 0 0 60px;
     /* margin: 0 200px 0 199px; */
-    margin: 0 5px 0 200px;
+    margin: 72px 0px 0 200px;
     min-height: 850px;
     /* display: table-cell; */
     border: 2px solid green;
@@ -106,7 +104,7 @@ hr {
 label.uploadstyle {
     padding: 10px;
     /* background: linear-gradient(20deg, rgb(41, 114, 8), rgb(225, 231, 226)); */
-    background: linear-gradient(to left, rgba(255, 16, 16, 0.5), rgba(255,0,0,1));
+    background: linear-gradient(to left, rgba(255, 16, 16, 0.5), rgba(255, 0, 0, 1));
     display: table;
     color: #fff;
     width: 300px;
