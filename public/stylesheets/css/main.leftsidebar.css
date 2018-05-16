@@ -106,6 +106,16 @@ Left sidebar footer
     margin: 0 0 0 0;
 }
 
+.sidebar-content-wrapper ul li span.sub-arrow::after{
+    content: "\f104" !important;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 12px;
+    float: right;
+    vertical-align: middle;
+
+}
+
 .sidebar-content-wrapper ul {
     margin: 0;
     padding: 0;
