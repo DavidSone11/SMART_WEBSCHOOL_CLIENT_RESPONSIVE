@@ -59,7 +59,7 @@
 }
 
 .header-right-content nav {
-    padding: 10px 0 0 150px;
+    padding: 10px 0 0 80px;
 }
 
 .header-right-content nav a {
@@ -70,9 +70,9 @@
 }
 
 .header-right-content nav span {
-    color: yellowgreen;
+    color: #ffffff;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
