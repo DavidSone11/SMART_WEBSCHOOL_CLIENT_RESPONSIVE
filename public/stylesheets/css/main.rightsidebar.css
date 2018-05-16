@@ -32,3 +32,12 @@
     vertical-align: middle;
    
 }
+
+
+.rsidebar-no-page-wrapper {
+    
+    width: 0%;    
+    height: 100%;
+    min-height: 600px;
+
+}

@@ -5,8 +5,16 @@ app.directive("rsidebar", ['$compile', function ($compile) {
         restrict: 'E',
         replace: true,
         templateUrl: 'ng/directives/r_sidebar/r_sidebar.tmpl.html',
-     
+
         controller: function ($scope) {
+
+            $scope.rightToggler = function () {
+
+                $(function () {
+                  $('#rightSidebar').animate({width: "30px"},"slow");
+                });
+
+            }
 
 
 
