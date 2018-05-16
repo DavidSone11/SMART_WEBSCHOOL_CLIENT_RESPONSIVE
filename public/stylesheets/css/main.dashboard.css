@@ -56,7 +56,8 @@ body {
 .main-content {
     background: #ffffff;
     padding: 0 0 0 60px;
-    margin: 0 200px 0 199px;
+    /* margin: 0 200px 0 199px; */
+    margin: 0 5px 0 200px;
     min-height: 850px;
     /* display: table-cell; */
     border: 2px solid green;
