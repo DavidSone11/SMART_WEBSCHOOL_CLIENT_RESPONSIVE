@@ -87,15 +87,18 @@ Left sidebar footer
 
 .sidebar-content-wrapper ul li{
     list-style:none;
+    padding: 25px 0 0 0;
 }
 
 .sidebar-content-wrapper ul li a{
     text-decoration: none;
+    padding: 0 0 0 25px;
     
 }
 .sidebar-content-wrapper ul li p{
     color:#fff;    
     display: inline;
+    padding: 0 0 0 25px;
 }
 
 .sidebar-content-wrapper ul li i{
