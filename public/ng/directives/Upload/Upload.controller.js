@@ -19,6 +19,8 @@ app.controller("UploadController", ['$scope', '$timeout', '$http', function ($sc
             $scope.contentType = selected.originalObject.img.contentType;
             $scope.base64String = _arrayBufferToBase64(selected.originalObject.img.data["data"]);
 
+        }else{
+            $scope.base64String = null;
         }
     };
 

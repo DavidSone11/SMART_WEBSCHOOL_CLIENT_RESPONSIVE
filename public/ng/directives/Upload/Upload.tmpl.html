@@ -1,6 +1,13 @@
 <div flow-init>
 
 
+    <style>
+        picture.imgBox {
+            width: 100%;
+            height: 100%;
+            min-height: 500px;
+        }
+    </style>
 
 
     <div class="page-header">
@@ -23,12 +30,12 @@
 
 
     <form enctype="multipart/form-data">
-            <label class="uploadstyle">
-                <i class="fa fa-upload fa-fw fa-1x"></i>
-                <input type="file" flow-btn id="File" size="60"/> Choose files to Upload
-            </label>
-            Input OR Other element as upload button
-       
+        <label class="uploadstyle">
+            <i class="fa fa-upload fa-fw fa-1x"></i>
+            <input type="file" flow-btn id="File" size="60" /> Choose files to Upload
+        </label>
+        Input OR Other element as upload button
+
 
         <tr ng-repeat="file in $flow.files">
             <td>{{$index+1}}</td>
@@ -47,9 +54,9 @@
 
 
 
-    <frameset rows="100%">
+    <picture rows="100%" class="imgBox">
         <img ng-src="data:{{contentType}};base64,{{base64String}}" width="850" height="auto">
-    </frameset>
+    </picture>
 
 
 
