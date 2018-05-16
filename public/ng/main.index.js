@@ -75,7 +75,7 @@ var r = (function mainFun() {
                 }
             }).state('home.user', {
                 url: '/user',
-                template: '<user></user>',
+                templateUrl: 'ng/directives/User/User.tmpl.html',
                 controller: 'UserController',
                 resolve: {
                     loadAllMyDirectives: ['$ocLazyLoad', function ($ocLazyLoad) {
