@@ -1,9 +1,10 @@
 .l_sidebar {
     float: left;
-    min-height: 100%;
+    /* min-height: 100%; */
+    min-height: 2000px;
     width: 230px;
     padding: 0;
-    position: fixed;
+    /* position: fixed; */
     background: rgba(42, 63, 84, 1);
     /* display: flex; */
     top: 0;
@@ -114,6 +115,11 @@ Left sidebar footer
     list-style: none;
     padding: 25px 0 0 0;
 }
+.sidebar-content-wrapper li:hover {
+   background: rgba(0,0,0,0.3);
+   padding: 25px 0 0 0;
+   
+}
 
 .sidebar-content-wrapper ul li a {
     text-decoration: none;
@@ -125,6 +131,9 @@ Left sidebar footer
     display: inline;
     padding: 0 0 0 25px;
 }
+.custom-active {
+    background: rgba(255,0,0,1)!important;
+ }
 
 .sidebar-content-wrapper ul li i {
     color: rgb(210, 214, 202);
