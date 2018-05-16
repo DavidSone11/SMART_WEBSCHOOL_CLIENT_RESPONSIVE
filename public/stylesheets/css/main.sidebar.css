@@ -33,12 +33,12 @@
 
 .r_sidebar {
     float: right;
-    width: 200px;
-    background: yellow;
+    width: 80%;
+    background: #e2e24a;
     height: 100%;
-    min-height: 250px;
+    min-height: 600px;
     z-index: -9999;
-    margin: 200px 0px 0 0;
+    margin: 80px 0px 0 0;
     box-shadow: 10px 0 25px #888888;
 }
 
