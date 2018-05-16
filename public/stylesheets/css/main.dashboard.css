@@ -79,7 +79,7 @@ body {
 
 .main-content {
     background: #ffffff;
-    padding: 50px 0 0 52px;
+    padding: 0 0 0 60px;
     margin: 0 200px 0 199px;
     min-height: 850px;
     /* display: table-cell; */
@@ -91,6 +91,7 @@ body {
     margin: 40px 0 20px;
     border-bottom: 1px solid #eee;
 }
+
 .page-header h1 {
     font-size: 36px;
     font-weight: 500;
@@ -123,4 +124,18 @@ hr {
     border: none;
     outline: none;
     border-bottom: 2px solid #000;
+}
+
+label.uploadstyle {
+    padding: 10px;
+    /* background: linear-gradient(20deg, rgb(41, 114, 8), rgb(225, 231, 226)); */
+    background: linear-gradient(to left, rgba(255, 16, 16, 0.5), rgba(255,0,0,1));
+    display: table;
+    color: #fff;
+    width: 300px;
+    border: 1px solid green;
+}
+
+input[type="file"] {
+    display: none;
 }

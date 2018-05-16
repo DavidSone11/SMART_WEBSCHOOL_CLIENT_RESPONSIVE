@@ -1,18 +1,11 @@
 <div flow-init>
 
-    <style>
-        label.custom-file-upload {
-            border: 1px solid #ccc;
-            display: inline-block;
-            padding: 6px 12px;
-            cursor: pointer;
-        }
-    </style>
+
 
 
     <div class="page-header">
         <h1>Upload</h1>
-        
+
         <ul class="breadcrumb fa">
             <li>
                 <a href="#">Home</a>
@@ -29,16 +22,13 @@
     </div>
 
 
-
-
-    <br>
-    <br>
-
     <form enctype="multipart/form-data">
-        <label class="custom-file-upload">
-            <input type="file" flow-btn /> Input OR Other element as upload button
-        </label>
-
+            <label class="uploadstyle">
+                <i class="fa fa-upload fa-fw fa-1x"></i>
+                <input type="file" flow-btn id="File" size="60"/> Choose files to Upload
+            </label>
+            Input OR Other element as upload button
+       
 
         <tr ng-repeat="file in $flow.files">
             <td>{{$index+1}}</td>

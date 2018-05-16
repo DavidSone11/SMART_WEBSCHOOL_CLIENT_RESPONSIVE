@@ -22,10 +22,11 @@ ul.breadcrumb li {
 
 ul.breadcrumb li+li:before {
     padding: 8px;
-    color: black;
-    font-weight: bold;
-    content: ">";
+    color: blue;
     
+    content: ">";
+    font-weight: bold;
+    font-size: 15px;
 }
 
 /* Add a color to all links inside the list */
