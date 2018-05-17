@@ -5,15 +5,16 @@ app.directive("lsidebar", ['$compile', function ($compile) {
         restrict: 'E',
         replace: true,
         templateUrl: 'ng/directives/l_sidebar/l_sidebar.tmpl.html',
-     
+
         controller: function ($scope) {
 
             $(function () {
 
-                $('.has-sub-menu').click(function(e){
-                    $(this).toggleClass('tap').slideDown(200);
+                $('.has-sub-menu').click(function (e) {
+                    $(this).toggleClass('tap');
+                    $(this).css({'transition': 'width 2s' });
                 });
-                
+
 
             });
 
