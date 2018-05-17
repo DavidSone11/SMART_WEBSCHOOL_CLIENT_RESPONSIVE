@@ -8,7 +8,8 @@ var r = (function mainFun() {
         'angular-loading-bar',
         "ngSanitize",
         "flow",
-        "angucomplete-alt"
+        "angucomplete-alt",
+        "FBAngular"
     ]);
 
     var initInjector = angular.injector(['ng']);
