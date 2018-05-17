@@ -189,9 +189,6 @@ Left sidebar footer
     
 }
 
-
-
-
 .sidebar-content-wrapper li.tap span.sub-arraw::after {
     content: "\f107";
     font-family: "Font Awesome 5 Free";
@@ -199,4 +196,9 @@ Left sidebar footer
     margin-right: 12px;
     float: right;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.sidebar-header .no-header-wrapper{
+    width: 100%;
+    float: left;
 }

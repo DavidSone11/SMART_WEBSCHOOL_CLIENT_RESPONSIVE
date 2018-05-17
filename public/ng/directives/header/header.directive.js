@@ -16,8 +16,11 @@ app.directive("mainHeader", ['$compile', function ($compile) {
                         $('#main-content-wrapper').animate({ margin: "72px 0px 0 30px" });
                         $('.main-header').animate({ margin: "0 71px" });
                         $('.sidebar-footer').hide();
+                        $('.profile_info').hide();
+                        $('#profile_pic_id').removeClass("profile_info");
+                        $('#profile_pic_id').addClass("no-header-wrapper");
+                        $('.main-header .header-right-content').animate({padding:"0px 0 0 152px"});
 
-                        
                         
 
                     } else {
@@ -25,6 +28,9 @@ app.directive("mainHeader", ['$compile', function ($compile) {
                         $('.main-header').animate({ margin: "0 230px" });
                         $('#main-content-wrapper').animate({ margin: "72px 0px 0 231px" });
                         $('.sidebar-footer').show();
+                        $('.profile_info').show();
+                        $('#profile_pic_id').removeClass("no-header-wrapper");
+                        $('.main-header .header-right-content').animate({padding:"0px 0 0 0px"});
                     }
                 });
                 $scope.isToggle = !$scope.isToggle;
