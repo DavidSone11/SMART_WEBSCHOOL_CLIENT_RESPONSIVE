@@ -6,16 +6,26 @@ app.directive("lsidebar", ['$compile', function ($compile) {
         replace: true,
         templateUrl: 'ng/directives/l_sidebar/l_sidebar.tmpl.html',
 
-        controller: function ($scope) {
+        controller: function ($scope, Fullscreen) {
 
             $(function () {
                 $('.has-sub-menu').click(function (e) {
                     $(this).toggleClass('tap');
-                    $(this).css({'transition': 'width 2s' });
+                    $(this).css({ 'transition': 'width 2s' });
                 });
 
 
             });
+
+            $scope.enableFullScreen = function () {
+                if (Fullscreen.isEnabled())
+                    Fullscreen.cancel();
+                else
+                    Fullscreen.all();
+
+
+            }
+
 
 
         }
