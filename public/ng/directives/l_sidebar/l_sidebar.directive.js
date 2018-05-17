@@ -9,7 +9,6 @@ app.directive("lsidebar", ['$compile', function ($compile) {
         controller: function ($scope) {
 
             $(function () {
-
                 $('.has-sub-menu').click(function (e) {
                     $(this).toggleClass('tap');
                     $(this).css({'transition': 'width 2s' });
