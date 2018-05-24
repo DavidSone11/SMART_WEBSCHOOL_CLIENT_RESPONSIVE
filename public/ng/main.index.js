@@ -51,7 +51,11 @@ var r = (function mainFun() {
                                 'ng/directives/l_sidebar/l_sidebar.directive.js',
                                 'ng/directives/r_sidebar/r_sidebar.directive.js',
                                 'ng/directives/header/header.directive.js',
-                                'ng/directives/footer/footer.directive.js'
+                                'ng/directives/footer/footer.directive.js',
+
+
+                                // all custom directive loaded
+                                'ng/custom-directives/fileUpload.directive.js'
 
 
                             ]
