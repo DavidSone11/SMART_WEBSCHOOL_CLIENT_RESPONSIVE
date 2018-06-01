@@ -8,12 +8,10 @@ app.controller("DashboardController", function ($scope, $interpolate, $parse, $c
     $scope.a = 2;
     $scope.b = 3;
 
-    var f = $interpolate("Result is : {{a*b}}");
-    var result = f($scope);
-    console.log(result);
-    var f1 = $parse("a*b");
-    var result1 = f1($scope);
-    console.log(result1);
+   
+    console.log( $interpolate("Result is : {{a*b}}")($scope));
+
+    console.log($parse("a*b")($scope));
 
     console.log($interpolate("Result is : {{a*b | currency : 'USD$'}}")($scope));
 
