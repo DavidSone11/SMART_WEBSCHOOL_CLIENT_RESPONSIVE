@@ -18,7 +18,7 @@ app.directive("uploadFile", function ($compile) {
         // },
         // template:'<div> FirstName :{{name}} email :{{email}}</div>',
         link:function(scope,elem,attrs){
-
+            //elem.html('Thanks for buying this item.');
         },
         controller:function($scope){
 
